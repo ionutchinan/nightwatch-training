@@ -1,0 +1,29 @@
+12:31:59.052 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+12:31:59.130 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2019-08-20 12:31:59.200:INFO::main: Logging initialized @469ms to org.seleniumhq.jetty9.util.log.StdErrLog
+12:31:59.494 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+12:31:59.961 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+12:32:00.908 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptSslCerts": true,
+  "browserName": "firefox",
+  "javascriptEnabled": true
+}
+12:32:00.924 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+1566293522085	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IONUT~1.CHI\\AppData\\Local\\Temp\\rust_mozprofile.aR6IquuhvGJT"
+1566293522892	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1566293522892	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1566293522893	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1566293522893	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1566293525474	Marionette	INFO	Listening on port 59681
+12:32:05.807 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:32:05.854 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f0924e8d-1235-4036-bad9-d8300c244059 (org.openqa.selenium.firefox.GeckoDriverService)
+1566293555318	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1566293555586	Marionette	INFO	Stopped listening on port 59681
+[Parent 13728, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[GP
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+U 13488, Chrome_ChildThrea
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

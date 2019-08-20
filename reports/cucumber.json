@@ -1,0 +1,612 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Log into the Timesheet application",
+    "line": 1,
+    "id": "log-into-the-timesheet-application",
+    "tags": [],
+    "uri": "features\\Login_tests\\loginTests.feature",
+    "elements": [
+      {
+        "id": "log-into-the-timesheet-application;log-in-using-valid-credentials",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Log in using valid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user opens the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the title is \"Timesheet\"",
+            "match": {
+              "location": "features\\step_definitions\\generic_steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user enters the username:radu.pop and the password:test",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 253000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user clicks the \"Login\" button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 417000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user:radu.pop reaches the Dashboard",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 404000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "log-into-the-timesheet-application;log-in-using-valid-credentials",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Log in using valid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user opens the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the title is \"Timesheet\"",
+            "match": {
+              "location": "features\\step_definitions\\generic_steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user enters the username:Radu.POP and the password:test",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user clicks the \"Login\" button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 336000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user:Radu.POP reaches the Dashboard",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 307000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "log-into-the-timesheet-application;log-in-using-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Log in using invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user opens the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the title is \"Timesheet\"",
+            "match": {
+              "location": "features\\step_definitions\\generic_steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user enters the username:radu.pop and password:TEST",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user clicks the \"Login\" button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 264000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the user gets an error message",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4048000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "log-into-the-timesheet-application;log-in-using-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Log in using invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user opens the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the title is \"Timesheet\"",
+            "match": {
+              "location": "features\\step_definitions\\generic_steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user enters the username:john.doe and password:login",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user clicks the \"Login\" button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 300000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the user gets an error message",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4070000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "log-into-the-timesheet-application;log-in-using-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Log in using invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user opens the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the title is \"Timesheet\"",
+            "match": {
+              "location": "features\\step_definitions\\generic_steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user enters the username:jane.doe and password:test",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user clicks the \"Login\" button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the user gets an error message",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4059000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "log-into-the-timesheet-application;log-in-using-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Log in using invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user opens the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 195000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the title is \"Timesheet\"",
+            "match": {
+              "location": "features\\step_definitions\\generic_steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user enters the username:radu.pop and password:12345",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 228000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user clicks the \"Login\" button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 263000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the user gets an error message",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4055000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "log-into-the-timesheet-application;log-in-using-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Log in using invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user opens the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the title is \"Timesheet\"",
+            "match": {
+              "location": "features\\step_definitions\\generic_steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user enters the username:blank and password:blank",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user clicks the \"Login\" button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the user gets an error message",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4048000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "log-into-the-timesheet-application;log-in-using-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Log in using invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user opens the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the title is \"Timesheet\"",
+            "match": {
+              "location": "features\\step_definitions\\generic_steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user enters the username:radu.pop and password:blank",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user clicks the \"Login\" button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 735000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the user gets an error message",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
