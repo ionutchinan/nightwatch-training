@@ -12,7 +12,7 @@ Examples:
 |username|password|
 |radu.pop|    test|
 |Radu.POP|    test|
-@tag
+
 Scenario Outline: Log in using invalid credentials
 Given the user opens the login page
 And the title is "Timesheet"
