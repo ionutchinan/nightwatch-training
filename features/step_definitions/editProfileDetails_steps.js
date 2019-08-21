@@ -15,7 +15,7 @@ When(/^the user clicks the edit icon$/, () => {
     .assert.visible(csslib.ProfileElements.editIconButton())
     .click(csslib.ProfileElements.editIconButton())
 })
-When(/^enters the following: email:"(.*?)", Skype:"(.*?)", company phone number:"(.*?)", personal phone number:"(.*?)", car number:"(.*?)"$/, (email, skype, companyPhone, personalPhone, carNumber) => {
+When(/^enters the following: email:"(.*?)", skype:"(.*?)", company phone number:"(.*?)", personal phone number:"(.*?)", car number:"(.*?)"$/, (email, skype, companyPhone, personalPhone, carNumber) => {
   // memorizing inputs
   profileObj.email = email
   profileObj.skype = skype
