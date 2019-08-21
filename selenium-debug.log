@@ -1,31 +1,30 @@
-11:18:21.000 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-11:18:21.084 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
-2019-08-21 11:18:21.147:INFO::main: Logging initialized @478ms to org.seleniumhq.jetty9.util.log.StdErrLog
-11:18:21.469 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-11:18:21.933 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
-11:18:22.324 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+14:19:35.830 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+14:19:35.908 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2019-08-21 14:19:35.971:INFO::main: Logging initialized @463ms to org.seleniumhq.jetty9.util.log.StdErrLog
+14:19:36.268 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+14:19:36.737 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+14:19:37.110 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "firefox",
   "javascriptEnabled": true
 }
-11:18:22.340 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
-1566375503138	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IONUT~1.CHI\\AppData\\Local\\Temp\\rust_mozprofile.DD3Ul7ZV9M76"
-1566375503918	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1566375503918	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1566375503919	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1566375503919	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1566375506369	Marionette	INFO	Listening on port 59953
-11:18:26.844 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-11:18:26.882 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4399c21f-9ac3-44b1-ab7a-33ddc94a8b65 (org.openqa.selenium.firefox.GeckoDriverService)
-1566375526329	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+14:19:37.125 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+1566386377922	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IONUT~1.CHI\\AppData\\Local\\Temp\\rust_mozprofile.0hWekq02DxF0"
+1566386378810	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1566386378810	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1566386378811	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1566386378811	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1566386381295	Marionette	INFO	Listening on port 51651
+14:19:41.660 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:19:41.691 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 940fb789-1fda-4404-a8b5-ecbc8b07766a (org.openqa.selenium.firefox.GeckoDriverService)
+1566386398263	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 bail@chrome://marionette/content/sync.js:223:64
-1566375527678	Marionette	INFO	Stopped listening on port 59953
-[Child 14284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 14284, Chrome_ChildThread] WARNI[Parent 15532, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 13776, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 13776, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc[GPU 8892, Chrome_Child
+1566386411553	Marionette	INFO	Stopped listening on port 51651
+[Child 8104, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8104, Chrome_ChildThread] WARNING: pipe[Parent 204, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[GPU 188
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-
+92, Chrome_ChildThr
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 

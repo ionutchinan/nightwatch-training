@@ -8,11 +8,11 @@ Given(/^the title is "(.*?)"$/, (text) => {
 Given(/^the user is logged in$/, () => {
   return client
     .init()
-    .assert.visible(csslib.LoginElements.usernameInput())
-    .assert.visible(csslib.LoginElements.passwordInput())
-    .assert.visible(csslib.LoginElements.buttonLogin())
-    .assert.attributeEquals(csslib.LoginElements.passwordInput(), 'type', 'password')
+    .pause(5000)
+    .clearValue(csslib.LoginElements.usernameInput())
+    .clearValue(csslib.LoginElements.passwordInput())
     .setValue(csslib.LoginElements.usernameInput(), 'radu.pop')
     .setValue(csslib.LoginElements.passwordInput(), 'test')
     .click(csslib.LoginElements.buttonLogin())
+    .pause(2000)
 })

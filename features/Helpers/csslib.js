@@ -33,6 +33,22 @@ const csslib = {
     goToSelfevaluation: () => 'div.active:nth-child(2) > a:nth-child(1) > div:nth-child(1)',
     goToReceivedevaluations: () => 'div.active:nth-child(2) > a:nth-child(2) > div:nth-child(1)',
     goToProvideevaluations: () => 'div.active:nth-child(2) > a:nth-child(3) > div:nth-child(1)'
+  },
+  ProfileElements: {
+    personalDetails: () => '.col-lg-5',
+    currentAllocations: () => 'div.col-xs-12:nth-child(2)',
+    editIconButton: () => 'button.icon',
+    email: () => 'div:nth-child(3) > div:nth-child(2) > a:nth-child(1)',
+    skype: () => 'div:nth-child(4) > div:nth-child(2) > a:nth-child(1)',
+    companyPhone: () => 'div:nth-child(5) > div:nth-child(2) > a:nth-child(1)',
+    personalPhone: () => 'div:nth-child(6) > div:nth-child(2) > a:nth-child(1)',
+    carNumber: () => '.\_2jxDh:nth-child(7) > .col-xs-9',
+    emailInput: () => 'div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)',
+    skypeInput: () => 'div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)',
+    companyPhoneInput: () => 'div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)',
+    personalPhoneInput: () => 'div:nth-child(4) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)',
+    carNumberInput: () => 'div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)',
+    saveButton: () => 'button.fluid'
   }
 }
 module.exports = csslib

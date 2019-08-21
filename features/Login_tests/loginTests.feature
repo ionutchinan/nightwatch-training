@@ -26,5 +26,5 @@ Examples:
 |        admin|   login| Invalid username or password.|
 |     john.doe|    test| Invalid username or password.|
 |razvan.vuscan|   12345| Invalid username or password.|
-|        blank|   blank|       User name not provided.|        
-|     radu.pop|   blank|        Password not provided.| 
+|     radu.pop|   blank|       User name not provided.|        
+|        blank|   blank|        Password not provided.| 

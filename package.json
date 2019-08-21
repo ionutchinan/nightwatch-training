@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nightwatch -c conf/nightwatch.conf.js -e firefox",
-    "gtest": "nightwatch -c conf/nightwatch.conf.js -e firefox -g Login_tests",
+    "gtest": "nightwatch -c conf/nightwatch.conf.js -e firefox -g Profile_tests",
     "paralleltest": "nightwatch -c conf/nightwatch.conf.js -e firefox,chrome",
     "eslint": "eslint . --fix --ext .js",
     "generate-report": "node reports/generateReport.js"
@@ -17,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
+    "chai-nightwatch": "^0.3.0",
     "chromedriver": "^75.1.0",
     "cucumber": "^4.2.1",
     "cucumber-html-reporter": "^5.0.0",
