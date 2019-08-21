@@ -19,13 +19,13 @@ When(/^the user clicks the "Login" button$/, () => {
 }) // end
 
 // Happy path steps begin here
-When(/^the user enters the username:(.*?) and the password:(.*?)$/, (username, password) => {
+When(/^the user enters the username:"(.*?)" and the password:"(.*?)"$/, (username, password) => {
   return client
     .setValue(csslib.LoginElements.usernameInput(), username)
     .setValue(csslib.LoginElements.passwordInput(), password)
 })
 
-Then(/^the user:(.*?) reaches the Dashboard$/, (username) => {
+Then(/^the user:"(.*?)" reaches the Dashboard$/, (username) => {
   return client
     .waitForElementVisible(csslib.DashboardElements.userName(), 1000)
     .assert.containsText(csslib.DashboardElements.userName(), utils.getNameFromUsername(username))
@@ -34,7 +34,7 @@ Then(/^the user:(.*?) reaches the Dashboard$/, (username) => {
 }) // end
 
 // Invalid path steps begin here
-When(/^the user enters the username:(.*?) and password:(.*?)$/, (username, password) => {
+When(/^the user enters the username:"(.*?)" and password:"(.*?)"$/, (username, password) => {
   if (username === 'blank') username = ''
   if (password === 'blank') password = ''
   return client
@@ -42,7 +42,7 @@ When(/^the user enters the username:(.*?) and password:(.*?)$/, (username, passw
     .setValue(csslib.LoginElements.usernameInput(), username)
     .setValue(csslib.LoginElements.passwordInput(), password)
 })
-Then(/^the user gets the following error message:(.*?)$/, (message) => {
+Then(/^the user gets the following error message:"(.*?)"$/, (message) => {
   return client
     .waitForElementVisible(csslib.LoginElements.errorInvalidData(), 1000)
     .assert.containsText(csslib.LoginElements.errorInvalidData(), message)

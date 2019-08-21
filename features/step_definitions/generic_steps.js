@@ -8,9 +8,8 @@ Given(/^the title is "(.*?)"$/, (text) => {
 Given(/^the user is logged in$/, () => {
   return client
     .init()
-    .pause(5000)
+    .pause(3000)
     .clearValue(csslib.LoginElements.usernameInput())
-    .clearValue(csslib.LoginElements.passwordInput())
     .setValue(csslib.LoginElements.usernameInput(), 'radu.pop')
     .setValue(csslib.LoginElements.passwordInput(), 'test')
     .click(csslib.LoginElements.buttonLogin())
