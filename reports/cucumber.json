@@ -8,161 +8,16 @@
     "uri": "features\\Login_tests\\loginTests.feature",
     "elements": [
       {
-        "id": "log-into-the-timesheet-application;log-in-using-valid-credentials",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Log in using valid credentials",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "the user opens the login page",
-            "match": {
-              "location": "features\\step_definitions\\login_steps.js:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6993000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "the title is \"Timesheet\"",
-            "match": {
-              "location": "features\\step_definitions\\generic_steps.js:4"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 18000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "the user enters the username:radu.pop and the password:test",
-            "match": {
-              "location": "features\\step_definitions\\login_steps.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 197000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user clicks the \"Login\" button",
-            "match": {
-              "location": "features\\step_definitions\\login_steps.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 337000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "the user:radu.pop reaches the Dashboard",
-            "match": {
-              "location": "features\\step_definitions\\login_steps.js:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 343000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "log-into-the-timesheet-application;log-in-using-valid-credentials",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Log in using valid credentials",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "the user opens the login page",
-            "match": {
-              "location": "features\\step_definitions\\login_steps.js:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 229000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "the title is \"Timesheet\"",
-            "match": {
-              "location": "features\\step_definitions\\generic_steps.js:4"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "the user enters the username:Radu.POP and the password:test",
-            "match": {
-              "location": "features\\step_definitions\\login_steps.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 153000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user clicks the \"Login\" button",
-            "match": {
-              "location": "features\\step_definitions\\login_steps.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 288000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "the user:Radu.POP reaches the Dashboard",
-            "match": {
-              "location": "features\\step_definitions\\login_steps.js:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 283000000
-            }
-          }
-        ]
-      },
-      {
         "id": "log-into-the-timesheet-application;log-in-using-invalid-credentials",
         "keyword": "Scenario",
         "line": 25,
         "name": "Log in using invalid credentials",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@tag",
+            "line": 15
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -171,11 +26,11 @@
             "line": 17,
             "name": "the user opens the login page",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:9"
+              "location": "features\\step_definitions\\login_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 217000000
+              "duration": 7095000000
             }
           },
           {
@@ -184,11 +39,11 @@
             "line": 18,
             "name": "the title is \"Timesheet\"",
             "match": {
-              "location": "features\\step_definitions\\generic_steps.js:4"
+              "location": "features\\step_definitions\\generic_steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 14000000
             }
           },
           {
@@ -197,11 +52,11 @@
             "line": 19,
             "name": "the user enters the username:radu.pop and password:TEST",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:38"
+              "location": "features\\step_definitions\\login_steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 151000000
+              "duration": 242000000
             }
           },
           {
@@ -210,11 +65,11 @@
             "line": 20,
             "name": "the user clicks the \"Login\" button",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:17"
+              "location": "features\\step_definitions\\login_steps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 268000000
+              "duration": 275000000
             }
           },
           {
@@ -223,12 +78,11 @@
             "line": 21,
             "name": "the user gets the following error message:Invalid username or password",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:46"
+              "location": "features\\step_definitions\\login_steps.js:45"
             },
             "result": {
-              "status": "failed",
-              "duration": 8000000,
-              "error_message": "TypeError: this.waitForElementVisible is not a function\n    at Proxy.checkErrorMsgMatch (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\page-objects\\background.js:16:12)\n    at World.Then (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\step_definitions\\login_steps.js:47:21)"
+              "status": "passed",
+              "duration": 4108000000
             }
           }
         ]
@@ -238,7 +92,12 @@
         "keyword": "Scenario",
         "line": 26,
         "name": "Log in using invalid credentials",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@tag",
+            "line": 15
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -247,11 +106,11 @@
             "line": 17,
             "name": "the user opens the login page",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:9"
+              "location": "features\\step_definitions\\login_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 182000000
+              "duration": 230000000
             }
           },
           {
@@ -260,11 +119,11 @@
             "line": 18,
             "name": "the title is \"Timesheet\"",
             "match": {
-              "location": "features\\step_definitions\\generic_steps.js:4"
+              "location": "features\\step_definitions\\generic_steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 18000000
             }
           },
           {
@@ -273,11 +132,11 @@
             "line": 19,
             "name": "the user enters the username:admin and password:login",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:38"
+              "location": "features\\step_definitions\\login_steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 150000000
+              "duration": 203000000
             }
           },
           {
@@ -286,11 +145,11 @@
             "line": 20,
             "name": "the user clicks the \"Login\" button",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:17"
+              "location": "features\\step_definitions\\login_steps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 255000000
+              "duration": 269000000
             }
           },
           {
@@ -299,12 +158,11 @@
             "line": 21,
             "name": "the user gets the following error message:Invalid username or password",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:46"
+              "location": "features\\step_definitions\\login_steps.js:45"
             },
             "result": {
-              "status": "failed",
-              "duration": 3000000,
-              "error_message": "TypeError: this.waitForElementVisible is not a function\n    at Proxy.checkErrorMsgMatch (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\page-objects\\background.js:16:12)\n    at World.Then (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\step_definitions\\login_steps.js:47:21)"
+              "status": "passed",
+              "duration": 4074000000
             }
           }
         ]
@@ -314,7 +172,12 @@
         "keyword": "Scenario",
         "line": 27,
         "name": "Log in using invalid credentials",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@tag",
+            "line": 15
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -323,11 +186,11 @@
             "line": 17,
             "name": "the user opens the login page",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:9"
+              "location": "features\\step_definitions\\login_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 261000000
+              "duration": 225000000
             }
           },
           {
@@ -336,11 +199,11 @@
             "line": 18,
             "name": "the title is \"Timesheet\"",
             "match": {
-              "location": "features\\step_definitions\\generic_steps.js:4"
+              "location": "features\\step_definitions\\generic_steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 18000000
             }
           },
           {
@@ -349,11 +212,11 @@
             "line": 19,
             "name": "the user enters the username:john.doe and password:test",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:38"
+              "location": "features\\step_definitions\\login_steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 153000000
+              "duration": 249000000
             }
           },
           {
@@ -362,11 +225,11 @@
             "line": 20,
             "name": "the user clicks the \"Login\" button",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:17"
+              "location": "features\\step_definitions\\login_steps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 259000000
+              "duration": 272000000
             }
           },
           {
@@ -375,12 +238,12 @@
             "line": 21,
             "name": "the user gets the following error message:Invalid username or password",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:46"
+              "location": "features\\step_definitions\\login_steps.js:45"
             },
             "result": {
               "status": "failed",
-              "duration": 18000000,
-              "error_message": "TypeError: this.waitForElementVisible is not a function\n    at Proxy.checkErrorMsgMatch (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\page-objects\\background.js:16:12)\n    at World.Then (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\step_definitions\\login_steps.js:47:21)"
+              "duration": 69000000,
+              "error_message": "Testing if element <._2s8_B> contains text: \"Invalid username or password\". - Expected \"Invalid username or password\" but got: \"User not found.\"\n\n    at World.Then (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\step_definitions\\login_steps.js:48:13)"
             }
           }
         ]
@@ -390,7 +253,12 @@
         "keyword": "Scenario",
         "line": 28,
         "name": "Log in using invalid credentials",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@tag",
+            "line": 15
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -399,11 +267,11 @@
             "line": 17,
             "name": "the user opens the login page",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:9"
+              "location": "features\\step_definitions\\login_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 177000000
+              "duration": 193000000
             }
           },
           {
@@ -412,11 +280,11 @@
             "line": 18,
             "name": "the title is \"Timesheet\"",
             "match": {
-              "location": "features\\step_definitions\\generic_steps.js:4"
+              "location": "features\\step_definitions\\generic_steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 7000000
             }
           },
           {
@@ -425,11 +293,11 @@
             "line": 19,
             "name": "the user enters the username:razvan.vuscan and password:12345",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:38"
+              "location": "features\\step_definitions\\login_steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 150000000
+              "duration": 214000000
             }
           },
           {
@@ -438,11 +306,11 @@
             "line": 20,
             "name": "the user clicks the \"Login\" button",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:17"
+              "location": "features\\step_definitions\\login_steps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 345000000
+              "duration": 276000000
             }
           },
           {
@@ -451,12 +319,12 @@
             "line": 21,
             "name": "the user gets the following error message:Invalid username or password",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:46"
+              "location": "features\\step_definitions\\login_steps.js:45"
             },
             "result": {
               "status": "failed",
-              "duration": 3000000,
-              "error_message": "TypeError: this.waitForElementVisible is not a function\n    at Proxy.checkErrorMsgMatch (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\page-objects\\background.js:16:12)\n    at World.Then (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\step_definitions\\login_steps.js:47:21)"
+              "duration": 81000000,
+              "error_message": "Testing if element <._2s8_B> contains text: \"Invalid username or password\". - Expected \"Invalid username or password\" but got: \"User not found.\"\n\n    at World.Then (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\step_definitions\\login_steps.js:48:13)"
             }
           }
         ]
@@ -466,7 +334,12 @@
         "keyword": "Scenario",
         "line": 29,
         "name": "Log in using invalid credentials",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@tag",
+            "line": 15
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -475,11 +348,11 @@
             "line": 17,
             "name": "the user opens the login page",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:9"
+              "location": "features\\step_definitions\\login_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 190000000
+              "duration": 198000000
             }
           },
           {
@@ -488,11 +361,11 @@
             "line": 18,
             "name": "the title is \"Timesheet\"",
             "match": {
-              "location": "features\\step_definitions\\generic_steps.js:4"
+              "location": "features\\step_definitions\\generic_steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 18000000
             }
           },
           {
@@ -501,11 +374,11 @@
             "line": 19,
             "name": "the user enters the username:blank and password:blank",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:38"
+              "location": "features\\step_definitions\\login_steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 134000000
+              "duration": 155000000
             }
           },
           {
@@ -514,11 +387,11 @@
             "line": 20,
             "name": "the user clicks the \"Login\" button",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:17"
+              "location": "features\\step_definitions\\login_steps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 260000000
+              "duration": 362000000
             }
           },
           {
@@ -527,12 +400,11 @@
             "line": 21,
             "name": "the user gets the following error message:User name not provided",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:46"
+              "location": "features\\step_definitions\\login_steps.js:45"
             },
             "result": {
-              "status": "failed",
-              "duration": 2000000,
-              "error_message": "TypeError: this.waitForElementVisible is not a function\n    at Proxy.checkErrorMsgMatch (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\page-objects\\background.js:16:12)\n    at World.Then (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\step_definitions\\login_steps.js:47:21)"
+              "status": "passed",
+              "duration": 4074000000
             }
           }
         ]
@@ -542,7 +414,12 @@
         "keyword": "Scenario",
         "line": 30,
         "name": "Log in using invalid credentials",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@tag",
+            "line": 15
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -551,11 +428,11 @@
             "line": 17,
             "name": "the user opens the login page",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:9"
+              "location": "features\\step_definitions\\login_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 169000000
+              "duration": 202000000
             }
           },
           {
@@ -564,11 +441,11 @@
             "line": 18,
             "name": "the title is \"Timesheet\"",
             "match": {
-              "location": "features\\step_definitions\\generic_steps.js:4"
+              "location": "features\\step_definitions\\generic_steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 18000000
             }
           },
           {
@@ -577,11 +454,11 @@
             "line": 19,
             "name": "the user enters the username:radu.pop and password:blank",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:38"
+              "location": "features\\step_definitions\\login_steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 151000000
+              "duration": 198000000
             }
           },
           {
@@ -590,11 +467,11 @@
             "line": 20,
             "name": "the user clicks the \"Login\" button",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:17"
+              "location": "features\\step_definitions\\login_steps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 748000000
+              "duration": 767000000
             }
           },
           {
@@ -603,12 +480,12 @@
             "line": 21,
             "name": "the user gets the following error message:Password not provided",
             "match": {
-              "location": "features\\step_definitions\\login_steps.js:46"
+              "location": "features\\step_definitions\\login_steps.js:45"
             },
             "result": {
               "status": "failed",
-              "duration": 3000000,
-              "error_message": "TypeError: this.waitForElementVisible is not a function\n    at Proxy.checkErrorMsgMatch (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\page-objects\\background.js:16:12)\n    at World.Then (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\step_definitions\\login_steps.js:47:21)"
+              "duration": 1033000000,
+              "error_message": "Timed out while waiting for element <._2s8_B> to be present for 1000 milliseconds. - Expected \"visible\" but got: \"not found\"\n\n    at World.Then (C:\\Users\\ionut.chinan\\Documents\\GitHub\\nightwatch-training\\features\\step_definitions\\login_steps.js:47:6)"
             }
           }
         ]

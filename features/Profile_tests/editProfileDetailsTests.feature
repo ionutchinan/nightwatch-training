@@ -1,7 +1,7 @@
 Feature: Edit the personal details in the profile section
 
 Background: Given the user is logged in
-@tag
+
 Scenario: Edit the fields using valid data
 Given the user is on the profile page
 When the user clicks the edit icon

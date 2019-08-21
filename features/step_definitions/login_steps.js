@@ -1,8 +1,7 @@
 const { client } = require('nightwatch-cucumber')
 const { Given, When, Then } = require('cucumber')
-const csslib = require('../page-objects/csslib.js')
-const utils = require('../page-objects/utils.js')
-const background = client.page.background()
+const csslib = require('../helpers/csslib.js')
+const utils = require('../helpers/utils.js')
 // const expect = require('chai').expect - soon-  if you want to use Chai expects with variables (using them with CSS selectors works by default)
 
 // Common steps begin here
@@ -13,7 +12,7 @@ Given(/^the user opens the login page$/, () => {
     .assert.visible(csslib.LoginElements.passwordInput())
     .assert.visible(csslib.LoginElements.buttonLogin())
     .assert.attributeEquals(csslib.LoginElements.passwordInput(), 'type', 'password')
-}) 
+})
 When(/^the user clicks the "Login" button$/, () => {
   return client
     .click(csslib.LoginElements.buttonLogin())
@@ -44,5 +43,8 @@ When(/^the user enters the username:(.*?) and password:(.*?)$/, (username, passw
     .setValue(csslib.LoginElements.passwordInput(), password)
 })
 Then(/^the user gets the following error message:(.*?)$/, (message) => {
-  return background.checkErrorMsgMatch(csslib.LoginElements.errorInvalidData(), message)
+  return client
+    .waitForElementVisible(csslib.LoginElements.errorInvalidData(), 1000)
+    .assert.containsText(csslib.LoginElements.errorInvalidData(), message)
+    .pause(4000)
 }) // end
