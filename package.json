@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nightwatch -c conf/nightwatch.conf.js -e firefox",
-    "gtest": "nightwatch -c conf/nightwatch.conf.js -e firefox -g InsertGroupNameHere",
+    "gtest": "nightwatch -c conf/nightwatch.conf.js -e firefox -g Login_tests",
     "paralleltest": "nightwatch -c conf/nightwatch.conf.js -e firefox,chrome",
     "eslint": "eslint . --fix --ext .js",
     "generate-report": "node reports/generateReport.js"

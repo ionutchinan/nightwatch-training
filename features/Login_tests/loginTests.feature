@@ -18,13 +18,13 @@ Given the user opens the login page
 And the title is "Timesheet"
 When the user enters the username:<username> and password:<password>
 And the user clicks the "Login" button
-Then the user gets an error message
+Then the user gets the following error message:<message>
 
 Examples:
-|username|password|
-|radu.pop|    TEST|
-|john.doe|   login|
-|jane.doe|    test|
-|radu.pop|   12345|
-|  blank |   blank|
-|radu.pop|   blank|
+|     username|password|                      message|
+|     radu.pop|    TEST| Invalid username or password|
+|        admin|   login| Invalid username or password|
+|     john.doe|    test| Invalid username or password|
+|razvan.vuscan|   12345| Invalid username or password|
+|        blank|   blank|       User name not provided|        
+|     radu.pop|   blank|        Password not provided| 
