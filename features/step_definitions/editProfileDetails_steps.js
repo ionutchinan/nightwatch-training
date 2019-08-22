@@ -1,14 +1,14 @@
 const { client } = require('nightwatch-cucumber')
 const { Given, When, Then } = require('cucumber')
 const csslib = require('../helpers/csslib.js')
-// const expect = require('chai').expect
 const profileObj = {} // object is used to memorize the input so they can be evaluated in a different step
 
 Given(/^the user is on the profile page$/, () => {
   return client
     .click(csslib.DashboardElements.userImage())
-    .waitForElementVisible(csslib.ProfileElements.personalDetails(), 2000)
-    .waitForElementVisible(csslib.ProfileElements.currentAllocations(), 2000)
+    .waitForElementVisible(csslib.ProfileElements.personalDetailsSection(), 2000)
+    .waitForElementVisible(csslib.ProfileElements.currentAllocationsSection(), 2000)
+    .waitForElementVisible(csslib.ProfileElements.childrenSection(), 2000)
 })
 When(/^the user clicks the edit icon$/, () => {
   return client

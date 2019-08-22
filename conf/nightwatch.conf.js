@@ -34,6 +34,11 @@ module.exports = {
   test_settings: {
     chrome: {
       launch_url: 'http://192.168.88.76.xip.io:8091/#/login',
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        path: 'screenshots/chrome'
+      },
       desiredCapabilities: {
         browserName: 'chrome',
         javascriptEnabled: true,
@@ -42,6 +47,11 @@ module.exports = {
     },
     firefox: {
       launch_url: 'http://192.168.88.76.xip.io:8091/#/login',
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        path: 'screenshots/firefox'
+      },
       desiredCapabilities: {
         browserName: 'firefox',
         javascriptEnabled: true,
@@ -49,6 +59,11 @@ module.exports = {
       }
     },
     firefox_headless: {
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        path: 'screenshots/firefox'
+      },
       desiredCapabilities: {
         browserName: 'firefox',
         javascriptEnabled: true,
@@ -59,6 +74,11 @@ module.exports = {
       }
     },
     chrome_headless: {
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        path: 'screenshots/chrome'
+      },
       desiredCapabilities: {
         browserName: 'chrome',
         javascriptEnabled: true,

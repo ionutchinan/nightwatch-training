@@ -21,6 +21,7 @@ When(/^the user clicks the "Login" button$/, () => {
 // Happy path steps begin here
 When(/^the user enters the username:"(.*?)" and the password:"(.*?)"$/, (username, password) => {
   return client
+    .pause(2000)
     .setValue(csslib.LoginElements.usernameInput(), username)
     .setValue(csslib.LoginElements.passwordInput(), password)
 })

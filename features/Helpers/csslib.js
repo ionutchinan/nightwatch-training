@@ -12,7 +12,10 @@ const csslib = {
     userName: () => 'div[class*="menu "] > div:nth-child(1) > div:first-of-type'
   },
   TopRightMenuElements: {
-    buttonLogout: () => '.log.out.icon'
+    buttonLogout: () => 'a.item:nth-child(4) > div:nth-child(2)',
+    languageSelector: () => 'div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > i',
+    selectRO: () => 'div.visible:nth-child(3) > div > i[class="ro flag"]',
+    selectUS: () => 'div.visible:nth-child(3) > div > i[class="us flag"]'
   },
   LeftMenuElements: {
     goToDashboard: () => 'a:nth-child(3) > div > i',
@@ -35,8 +38,12 @@ const csslib = {
     goToProvideevaluations: () => 'div.active:nth-child(2) > a:nth-child(3) > div:nth-child(1)'
   },
   ProfileElements: {
-    personalDetails: () => '.col-lg-5',
-    currentAllocations: () => 'div.col-xs-12:nth-child(2)',
+    personalDetailsSection: () => '.col-lg-5',
+    currentAllocationsSection: () => 'div.col-xs-12:nth-child(2)',
+    childrenSection: () => 'div.segment:nth-child(2)',
+    childrenTableRow: () => 'div.container-fluid:nth-child(3) > div:nth-child(2)',
+    childrenTableColumn: () => 'div.container-fluid:nth-child(3) > div >div',
+    addChildButton: () => 'div.labeled:nth-child(1) > button:nth-child(1)',
     editIconButton: () => 'button.icon',
     email: () => 'div:nth-child(3) > div:nth-child(2) > a:nth-child(1)',
     skype: () => 'div:nth-child(4) > div:nth-child(2) > a:nth-child(1)',
@@ -48,7 +55,14 @@ const csslib = {
     companyPhoneInput: () => 'div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)',
     personalPhoneInput: () => 'div:nth-child(4) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)',
     carNumberInput: () => 'div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)',
-    saveButton: () => 'button.fluid'
+    saveButton: () => 'button.fluid',
+    addChildFlexbox: () => '.page',
+    childFirstName: () => 'div.field:nth-child(2) > div:nth-child(1) > input:nth-child(1)',
+    childLastName: () => 'div.field:nth-child(4) > div:nth-child(1) > input:nth-child(1)',
+    childGenderMakeEditable: () => 'div.field:nth-child(6)',
+    childGenderTextInput: () => 'input.search',
+    childBirthdate: () => 'input[name="birthdate"]',
+    saveChildButton: () => '.form-button'
   }
 }
 module.exports = csslib
