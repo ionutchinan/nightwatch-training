@@ -38,8 +38,8 @@ const csslib = {
     goToProvideevaluations: () => 'div.active:nth-child(2) > a:nth-child(3) > div:nth-child(1)'
   },
   ProfileElements: {
-    personalDetailsSection: () => '.col-lg-5',
-    currentAllocationsSection: () => 'div.col-xs-12:nth-child(2)',
+    personalDetailsSection: () => 'div:nth-child(2) > div:nth-child(2) > div:first-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(1)',
+    currentAllocationsSection: () => 'div:first-child >div:nth-child(2) > div:first-child > div:nth-child(2) > div:nth-child(1)',
     childrenSection: () => 'div.segment:nth-child(2)',
     childrenTableRow: () => 'div.container-fluid:nth-child(3) > div:nth-child(2)',
     childrenTableColumn: () => 'div.container-fluid:nth-child(3) > div >div',
@@ -64,13 +64,16 @@ const csslib = {
     childBirthdate: () => 'input[name="birthdate"]',
     saveChildButton: () => '.form-button'
   },
-  ContactsElements: {
+  SearchContactsElements: {
     contactsSection: () => 'div.container-fluid:nth-child(3)',
     searchInput: () => 'div > div> div:nth-child(1) > input',
     searchButton: () => 'button.icon',
-    showAdvancedFiltersButton: () => 'div.col-xs-6:nth-child(3) > button',
-    clearFields: () => 'div.col-xs-6:nth-child(4) > button:nth-child(1)',
-    resultName: () => 'div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:first-child',
+    showAdvancedFiltersButton: () => 'div:nth-child(3) > button',
+    clearFields: () => 'div:nth-child(4) > button',
+    resultNames: () => 'div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:first-child',
+  },
+  ContactDetailsElements: {
+    departmentName: () => 'div:nth-child(2) > div:nth-child(10)'
   }
 }
 module.exports = csslib

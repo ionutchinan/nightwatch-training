@@ -8,6 +8,7 @@ const utils = require('../helpers/utils.js')
 Given(/^the user opens the login page$/, () => {
   return client
     .init()
+    .pause(1000)
     .assert.visible(csslib.LoginElements.usernameInput())
     .assert.visible(csslib.LoginElements.passwordInput())
     .assert.visible(csslib.LoginElements.buttonLogin())

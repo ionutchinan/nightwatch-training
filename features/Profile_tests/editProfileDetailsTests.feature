@@ -10,4 +10,4 @@ When the user clicks the edit icon
 And enters the following: email:"popradu@gmail.com", skype:"poPradu", company phone number:"+40388646", personal phone number:"+40772087665", car number:"<CJ05LEL>"
 And the user clicks the "Save" button
 Then the information entered should appear on the profile
-And the user logs out
+Then the user logs out

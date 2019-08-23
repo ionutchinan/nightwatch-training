@@ -10,4 +10,4 @@ When the user clicks the "Add" button in the children section
 And enters the following: First name:"Dana", Last name:"Vuscan", Gender:"Female" and Birthdate:"05.06.2017"
 And the user clicks the "Add" button
 Then this child should appear in the children section of the profile
-And the user logs out
+Then the user logs out
