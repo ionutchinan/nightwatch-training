@@ -47,10 +47,11 @@ Then(/^this child should appear in the children section of the profile$/, async 
     return client.elementIdElements(row.ELEMENT, 'css selector', csslib.ProfileElements.childrenTableColumn(), output => {
       output.value.forEach(column => {
         return client.elementIdText(column.ELEMENT, res => {
-          console.log(res.value)
+          children.push(res.value)
         })
       })
     })
   })
 })
+expect(children).to.include.members(input)
 }) */

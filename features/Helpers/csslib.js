@@ -63,6 +63,14 @@ const csslib = {
     childGenderTextInput: () => 'input.search',
     childBirthdate: () => 'input[name="birthdate"]',
     saveChildButton: () => '.form-button'
+  },
+  ContactsElements: {
+    contactsSection: () => 'div.container-fluid:nth-child(3)',
+    searchInput: () => 'div > div> div:nth-child(1) > input',
+    searchButton: () => 'button.icon',
+    showAdvancedFiltersButton: () => 'div.col-xs-6:nth-child(3) > button',
+    clearFields: () => 'div.col-xs-6:nth-child(4) > button:nth-child(1)',
+    resultName: () => 'div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:first-child',
   }
 }
 module.exports = csslib
