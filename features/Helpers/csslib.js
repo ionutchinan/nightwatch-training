@@ -70,7 +70,8 @@ const csslib = {
     searchButton: () => 'button.icon',
     showAdvancedFiltersButton: () => 'div:nth-child(3) > button',
     clearFields: () => 'div:nth-child(4) > button',
-    resultNames: () => 'div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:first-child'
+    resultNames: () => 'div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:first-child',
+    goToNextPageOfResults: () => 'div:first-child > a.item:nth-last-child(2)'
   },
   ContactDetailsElements: {
     departmentName: () => 'div:nth-child(2) > div:nth-child(10)'

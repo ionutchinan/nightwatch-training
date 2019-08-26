@@ -13,9 +13,9 @@ When the user clicks on the result
 Then the position listed should be:"Software Tester | Automation"
 Then the user logs out
 
-Scenario: Search for a current employee using their partial name
+Scenario: Happy path: Search the employee directory using a partial name
 Given the user is on the contacts page
 When the user enters:"Pop" in the search box
 And the user clicks the search button
-Then the only results shown are the employees whos names contain:"Pop"
+Then the only results shown are the ones that have:"Pop" in their name
 Then the user logs out
