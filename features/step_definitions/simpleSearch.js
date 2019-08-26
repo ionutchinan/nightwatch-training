@@ -18,12 +18,12 @@ When(/^the user clicks the search button$/, () => {
   return client
     .assert.visible(csslib.SearchContactsElements.searchButton())
     .click(csslib.SearchContactsElements.searchButton())
+    .pause(1500) // added pause because Chrome api is qucik enough to run the next step before the results load in the DOM
 })
 Then(/^the only result shown is the employee:"(.*?)"$/, (name) => {
-  let count = 0 // the counter is used to count the results, since there is one employee matching, we expect one result
   return client.elements('css selector', csslib.SearchContactsElements.resultNames(), results => {
+    const count = results.value.length // counting the results, since there is one employee matching, we expect one result
     results.value.forEach(result => {
-      count++
       return client.elementIdText(result.ELEMENT, text => {
         expect(text.value).to.contain(name)
       })
@@ -50,7 +50,7 @@ Then(/^the only results shown are the ones that have:"(.*?)" in their name$/, (p
       if (result.status > -1) {
         // "next" pagination button is present
         return client.elements('css selector', csslib.SearchContactsElements.resultNames(), results => {
-          counter += Math.floor(results.value.length / 12) // with each new page evaluated add one to the counter -> run another iteration of the for cycle
+          counter += Math.floor(results.value.length / 12) // with each new page evaluated add one to the counter (max 12 results per page) -> run another iteration of the for cycle
           results.value.forEach(result => {
             return client.elementIdText(result.ELEMENT, text => {
               // check if each result contains the input search term, switched everything to lowercase since assert.include seems to be case sensitive
@@ -63,8 +63,10 @@ Then(/^the only results shown are the ones that have:"(.*?)" in their name$/, (p
       } else { // else is to be executed when the number of results does not exceed 12 -> only one page -> next button not visible
         return client.elements('css selector', csslib.SearchContactsElements.resultNames(), results => {
           results.value.forEach(result => {
+            counter++
+            console.log(counter)
             return client.elementIdText(result.ELEMENT, text => {
-              expect(text.value).to.contain(partial)
+              assert.include(text.value.toLowerCase(), partial.toLowerCase())
             })
           })
         })

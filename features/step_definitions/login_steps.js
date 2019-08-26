@@ -22,7 +22,7 @@ When(/^the user clicks the "Login" button$/, () => {
 // Happy path steps begin here
 When(/^the user enters the username:"(.*?)" and the password:"(.*?)"$/, (username, password) => {
   return client
-    .pause(2000)
+    .pause(1000)
     .setValue(csslib.LoginElements.usernameInput(), username)
     .setValue(csslib.LoginElements.passwordInput(), password)
 })
@@ -48,5 +48,5 @@ Then(/^the user gets the following error message:"(.*?)"$/, (message) => {
   return client
     .waitForElementVisible(csslib.LoginElements.errorInvalidData(), 1000)
     .assert.containsText(csslib.LoginElements.errorInvalidData(), message)
-    .pause(4000)
+    .pause(2000)
 }) // end

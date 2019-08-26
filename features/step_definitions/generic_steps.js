@@ -8,7 +8,7 @@ Given(/^the title is "(.*?)"$/, (text) => {
 Given(/^the user is logged in$/, () => {
   return client
     .init()
-    .pause(3000)
+    .pause(1000)
     .clearValue(csslib.LoginElements.usernameInput())
     .setValue(csslib.LoginElements.usernameInput(), 'razvan.vuscan')
     .setValue(csslib.LoginElements.passwordInput(), 'test')

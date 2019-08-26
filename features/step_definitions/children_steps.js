@@ -25,7 +25,7 @@ When(/^the user clicks the "Add" button$/, () => {
   return client
     .assert.visible(csslib.ProfileElements.saveChildButton())
     .click(csslib.ProfileElements.saveChildButton())
-    .pause(2000)
+    .pause(1000)
 })
 Then(/^this child should appear in the children section of the profile$/, async () => {
   const children = [] // used to memorize the data from the list of children taken from the DOM
