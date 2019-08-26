@@ -42,16 +42,14 @@ When(/^the user clicks on the result$/, () => {
 Then(/^the position listed should be:"(.*?)"$/, (word) => {
   return client.expect.element(csslib.ContactDetailsElements.departmentName()).text.to.equal(word)
 })
-Then(/^the only results shown are the employees:"(.*?)","(.*?)"$/, (first, second) => {
-  let counter = 0 // the counter is used to count the results, since there are two employees matching, we expect two results
-  const expected = [first, second]
+Then(/^the only results shown are the employees whos names contain:"(.*?)"$/, (partial) => {
+  // let counter = 0 // the counter is used to count the results, since there are two employees matching, we expect two results
   return client.elements('css selector', csslib.SearchContactsElements.resultNames(), results => {
     results.value.forEach(result => {
-      counter++
+      // counter++
       return client.elementIdText(result.ELEMENT, text => {
-        expect(expected).to.contain(text.value)
+        expect(text.value).to.contain(partial)
       })
     })
-    expect(counter).to.equal(2)
   })
 })

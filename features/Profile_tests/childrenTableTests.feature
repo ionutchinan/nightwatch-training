@@ -3,7 +3,7 @@ Feature: Adding children in the profile section
 Background: 
 Given the user is logged in
 And the page language is English
-@tag
+
 Scenario: Add a child to the user profile using valid data
 Given the user is on the profile page
 When the user clicks the "Add" button in the children section

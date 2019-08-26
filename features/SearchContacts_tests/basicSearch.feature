@@ -15,7 +15,7 @@ Then the user logs out
 
 Scenario: Search for a current employee using their partial name
 Given the user is on the contacts page
-When the user enters:"Vuscan" in the search box
+When the user enters:"Pop" in the search box
 And the user clicks the search button
-Then the only results shown are the employees:"Vuscan Razvan","Ana-Maria Vuscan"
+Then the only results shown are the employees whos names contain:"Pop"
 Then the user logs out
