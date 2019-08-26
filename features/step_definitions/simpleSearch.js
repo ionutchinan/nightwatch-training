@@ -63,8 +63,6 @@ Then(/^the only results shown are the ones that have:"(.*?)" in their name$/, (p
       } else { // else is to be executed when the number of results does not exceed 12 -> only one page -> next button not visible
         return client.elements('css selector', csslib.SearchContactsElements.resultNames(), results => {
           results.value.forEach(result => {
-            counter++
-            console.log(counter)
             return client.elementIdText(result.ELEMENT, text => {
               expect(text.value).to.contain(partial)
             })
