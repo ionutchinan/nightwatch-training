@@ -17,7 +17,7 @@ When(/^enters the following: First name:"(.*?)", Last name:"(.*?)", Gender:"(.*?
     .setValue(csslib.ProfileElements.childFirstName(), firstname)
     .setValue(csslib.ProfileElements.childLastName(), lastname)
     .click(csslib.ProfileElements.childGenderMakeEditable()) // gender field requires one click in order to accept an input
-    .pause(2000)
+    .pause(1000)
     .setValue(csslib.ProfileElements.childGenderTextInput(), gender)
     .setValue(csslib.ProfileElements.childBirthdate(), birthdate)
 })
@@ -36,6 +36,8 @@ Then(/^this child should appear in the children section of the profile$/, async 
       })
     })
   })
+  // I used aync and await because using return(s) in the elements section makes the expect method call unreachable code
+  // Also by using return(s) the <children> list ended up empty at the end of the forEach, yet with async, await all the table values are pushed into the list
   await expect(children).to.include.members(input) // we verify that the last added child (input) is in the list
 })
 

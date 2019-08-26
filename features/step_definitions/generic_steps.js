@@ -15,7 +15,7 @@ Given(/^the user is logged in$/, () => {
     .click(csslib.LoginElements.buttonLogin())
     .pause(2000)
 })
-Given(/^the page language is English$/, () =>{
+Given(/^the page language is English$/, () => {
   return client
     .click(csslib.TopRightMenuElements.languageSelector())
     .waitForElementVisible(csslib.TopRightMenuElements.selectUS(), 1000)
