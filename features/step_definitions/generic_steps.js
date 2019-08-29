@@ -6,14 +6,18 @@ Given(/^the title is "(.*?)"$/, (text) => {
   return client.assert.title(text)
 })
 Given(/^the user is logged in$/, () => {
-  return client
-    .init()
-    .pause(1000)
-    .clearValue(csslib.LoginElements.usernameInput())
-    .setValue(csslib.LoginElements.usernameInput(), 'razvan.vuscan')
-    .setValue(csslib.LoginElements.passwordInput(), 'test')
-    .click(csslib.LoginElements.buttonLogin())
-    .pause(2000)
+  client.init().pause(1500)
+  client.element('css selector', csslib.TopRightMenuElements.buttonLogout(), (result) => {
+    if (result.status > -1) return client.pause(1000)
+    else {
+      return client
+        .clearValue(csslib.LoginElements.usernameInput())
+        .setValue(csslib.LoginElements.usernameInput(), 'razvan.vuscan')
+        .setValue(csslib.LoginElements.passwordInput(), 'test')
+        .click(csslib.LoginElements.buttonLogin())
+        .pause(2000)
+    }
+  })
 })
 Given(/^the page language is English$/, () => {
   return client
@@ -22,7 +26,7 @@ Given(/^the page language is English$/, () => {
     .click(csslib.TopRightMenuElements.selectUS())
 })
 Then(/^the user logs out$/, () => {
-  return client.click(csslib.TopRightMenuElements.buttonLogout()).end()
+  return client.click(csslib.TopRightMenuElements.buttonLogout())
   // after an initial log in step has been run even when a .feature ends the next feature's .init() call will cause (cont.d)
   // the app to redirect to the dashboard page thus making the login step fail
   // simply logging out does not seem to work since it still redirects to the dashboard page (cont.d)

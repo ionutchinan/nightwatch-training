@@ -10,8 +10,8 @@ When the user enters:"Razvan Vuscan" in the search box
 And the user clicks the search button
 Then the only result shown is the employee:"Vuscan Razvan"
 When the user clicks on the result
-Then the position listed should be:"Software Tester | Automation"
-Then the user logs out
+Then the department listed should be:"Software Services - Travel"
+
 
 Scenario: Happy path: Search the employee directory using a partial name
 Given the user is on the contacts page

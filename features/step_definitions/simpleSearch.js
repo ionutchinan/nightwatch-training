@@ -12,6 +12,8 @@ Given(/^the user is on the contacts page$/, () => {
 When(/^the user enters:"(.*?)" in the search box$/, (name) => {
   return client
     .assert.visible(csslib.SearchContactsElements.searchInput())
+    .click(csslib.SearchContactsElements.clearFields())
+    .pause(500)
     .setValue(csslib.SearchContactsElements.searchInput(), name)
 })
 When(/^the user clicks the search button$/, () => {
@@ -40,7 +42,7 @@ When(/^the user clicks on the result$/, () => {
     })
   })
 })
-Then(/^the position listed should be:"(.*?)"$/, (word) => {
+Then(/^the department listed should be:"(.*?)"$/, (word) => {
   return client.expect.element(csslib.ContactDetailsElements.departmentName()).text.to.equal(word)
 })
 Then(/^the only results shown are the ones that have:"(.*?)" in their name$/, (partial) => {
@@ -63,8 +65,6 @@ Then(/^the only results shown are the ones that have:"(.*?)" in their name$/, (p
       } else { // else is to be executed when the number of results does not exceed 12 -> only one page -> next button not visible
         return client.elements('css selector', csslib.SearchContactsElements.resultNames(), results => {
           results.value.forEach(result => {
-            counter++
-            console.log(counter)
             return client.elementIdText(result.ELEMENT, text => {
               assert.include(text.value.toLowerCase(), partial.toLowerCase())
             })

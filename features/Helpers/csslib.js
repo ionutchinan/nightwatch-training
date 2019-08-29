@@ -69,12 +69,36 @@ const csslib = {
     searchInput: () => 'div > div> div:nth-child(1) > input',
     searchButton: () => 'button.icon',
     showAdvancedFiltersButton: () => 'div:nth-child(3) > button',
+    hideAdvancedFiltersButton: () => 'button.basic',
     clearFields: () => 'div:nth-child(4) > button',
     resultNames: () => 'div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:first-child',
-    goToNextPageOfResults: () => 'div:first-child > a.item:nth-last-child(2)'
+    goToNextPageOfResults: () => 'div:first-child > a.item:nth-last-child(2)',
+    advancedFilterSubsidiary: () => '.filterForm-padding > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)',
+    filterDropdown: () => 'div.visible:nth-child(4)',
+    filterDropdownElementText: () => 'div.visible:nth-child(4) > div:not(:first-child) > span',
+    filterDropdownElementGeneral: (sub) => {
+      switch (sub) {
+        case 'Bulgaria':
+          return 'div.visible:nth-child(4) > div:nth-child(2)'
+        case 'Computer Solutions B.V.':
+          return 'div.visible:nth-child(4) > div:nth-child(3)'
+        case 'Hungary':
+          return 'div.visible:nth-child(4) > div:nth-child(4)'
+        case 'Romania':
+          return 'div.visible:nth-child(4) > div:nth-child(5)'
+        case 'Republica Moldova':
+          return 'div.visible:nth-child(4) > div:nth-child(6)'
+        case 'Serbia':
+          return 'div.visible:nth-child(4) > div:nth-child(7)'
+        default:
+          return 'div.visible:nth-child(4) > div:nth-child(5)'
+      }
+    }
   },
   ContactDetailsElements: {
-    departmentName: () => 'div:nth-child(2) > div:nth-child(10)'
+    positionName: () => 'div:nth-child(2) > div:nth-child(10)',
+    departmentName: () => 'div:nth-child(2) > div:nth-child(6)',
+    subsidiaryName: () => 'div:nth-child(3) > div:nth-child(2) > div:nth-child(2)'
   }
 }
 module.exports = csslib

@@ -1,175 +1,32 @@
-14:36:23.565 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-14:36:23.643 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
-2019-08-26 14:36:23.721:INFO::main: Logging initialized @477ms to org.seleniumhq.jetty9.util.log.StdErrLog
-14:36:24.068 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-14:36:24.531 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
-14:36:26.129 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+13:38:33.115 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+13:38:33.193 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2019-08-29 13:38:33.256:INFO::main: Logging initialized @433ms to org.seleniumhq.jetty9.util.log.StdErrLog
+13:38:33.553 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+13:38:34.006 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+13:38:34.444 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "firefox",
   "javascriptEnabled": true
 }
-14:36:26.129 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "chrome",
-  "javascriptEnabled": true
-}
-14:36:26.129 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
-14:36:26.129 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
-Starting ChromeDriver 75.0.3770.90 (a6dcaf7e3ec6f70a194cc25e8149475c6590e025-refs/branch-heads/3770@{#1003}) on port 25576
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-1566819386942	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IONUT~1.CHI\\AppData\\Local\\Temp\\rust_mozprofile.UYD90bGnXeZX"
-[1566819387.774][WARNING]: This version of ChromeDriver has not been tested with Chrome version 76.
-1566819388087	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1566819388088	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1566819388088	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1566819388088	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-[1566819389.794][WARNING]: Timed out connecting to Chrome, retrying...
-1566819390322	Marionette	INFO	Listening on port 63412
-14:36:30.708 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-14:36:30.754 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session beb10ce8-38da-4c75-939d-7609a9ed1aed (org.openqa.selenium.firefox.GeckoDriverService)
-14:36:31.841 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-14:36:31.841 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c7231d04b8a9b28f2060b02faef2989f (org.openqa.selenium.chrome.ChromeDriverService)
-1566819419689	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-console.error: BroadcastService: 
-  receivedBroadcastMessage: handler for
-  remote-settings/monitor_changes
-  threw error:
-  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561548844810%22 is not a valid URL..
-  Stack:
-    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
-
-1566819430933	Marionette	INFO	Stopped listening on port 63412
-[Child 15508, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 15508, Chrome_ChildThre[Parent 12068, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Parent 12068, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-
+13:38:34.447 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+1567075115368	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IONUT~1.CHI\\AppData\\Local\\Temp\\rust_mozprofile.hqdECbMawGqW"
+1567075116025	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1567075116025	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1567075116026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1567075116026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1567075118562	Marionette	INFO	Listening on port 62002
+13:38:38.617 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:38:38.664 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 11c52749-a77d-4a5c-9765-b11357ec942f (org.openqa.selenium.firefox.GeckoDriverService)
+1567075134396	Marionette	INFO	Stopped listening on port 62002
+[Parent 27452, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12164, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 27452, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 23008, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 23008, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 27452, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[GPU 25408, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chr
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-[GPU 16324, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-14:37:12.048 INFO [ActiveSessions$1.onStop] - Removing session beb10ce8-38da-4c75-939d-7609a9ed1aed (org.openqa.selenium.firefox.GeckoDriverService)
-14:37:12.064 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "firefox",
-  "javascriptEnabled": true
-}
-14:37:12.064 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
-1566819432608	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IONUT~1.CHI\\AppData\\Local\\Temp\\rust_mozprofile.2Qm0paFKeEd1"
-1566819433427	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1566819433427	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1566819433428	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1566819433428	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-14:37:13.563 INFO [ActiveSessions$1.onStop] - Removing session c7231d04b8a9b28f2060b02faef2989f (org.openqa.selenium.chrome.ChromeDriverService)
-14:37:13.585 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "chrome",
-  "javascriptEnabled": true
-}
-14:37:13.586 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
-Starting ChromeDriver 75.0.3770.90 (a6dcaf7e3ec6f70a194cc25e8149475c6590e025-refs/branch-heads/3770@{#1003}) on port 35942
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1566819434.911][WARNING]: This version of ChromeDriver has not been tested with Chrome version 76.
-1566819436561	Marionette	INFO	Listening on port 64195
-14:37:16.948 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-14:37:16.948 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6450f727-b9d7-4139-ac56-ec17edcf3877 (org.openqa.selenium.firefox.GeckoDriverService)
-[1566819436.964][WARNING]: Timed out connecting to Chrome, retrying...
-14:37:19.026 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-14:37:19.026 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d85badc475f672868a15ed0ebb2bb866 (org.openqa.selenium.chrome.ChromeDriverService)
-1566819446786	Marionette	INFO	Stopped listening on port 64195
-[Child 19264, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 19264, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Parent 4868, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 11600, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 11600, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Parent 4868, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-[GPU 18812, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
-14:37:27.891 INFO [ActiveSessions$1.onStop] - Removing session 6450f727-b9d7-4139-ac56-ec17edcf3877 (org.openqa.selenium.firefox.GeckoDriverService)
-14:37:27.907 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "firefox",
-  "javascriptEnabled": true
-}
-14:37:27.907 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
-1566819448444	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IONUT~1.CHI\\AppData\\Local\\Temp\\rust_mozprofile.xeEMYKMJFzgT"
-14:37:28.695 INFO [ActiveSessions$1.onStop] - Removing session d85badc475f672868a15ed0ebb2bb866 (org.openqa.selenium.chrome.ChromeDriverService)
-14:37:28.717 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "chrome",
-  "javascriptEnabled": true
-}
-14:37:28.718 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
-Starting ChromeDriver 75.0.3770.90 (a6dcaf7e3ec6f70a194cc25e8149475c6590e025-refs/branch-heads/3770@{#1003}) on port 42709
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-1566819449199	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1566819449199	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1566819449200	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1566819449200	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-[1566819450.083][WARNING]: This version of ChromeDriver has not been tested with Chrome version 76.
-[1566819452.130][WARNING]: Timed out connecting to Chrome, retrying...
-1566819452228	Marionette	INFO	Listening on port 64425
-14:37:32.631 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-14:37:32.638 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ec8a3026-73b6-4018-8da0-4ce8ba055ae1 (org.openqa.selenium.firefox.GeckoDriverService)
-14:37:34.141 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-14:37:34.141 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 130a74a310874aa268e8da5d2dd6cbf7 (org.openqa.selenium.chrome.ChromeDriverService)
-1566819461979	Marionette	INFO	Stopped listening on port 64425
-[Parent 11556, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 6920, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 6920, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_cha[Parent 11556, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[GPU 12280, Chrome_ChildThre
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-ad] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_chann
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
-14:37:43.208 INFO [ActiveSessions$1.onStop] - Removing session ec8a3026-73b6-4018-8da0-4ce8ba055ae1 (org.openqa.selenium.firefox.GeckoDriverService)
-14:37:43.224 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "firefox",
-  "javascriptEnabled": true
-}
-14:37:43.224 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
-14:37:43.732 INFO [ActiveSessions$1.onStop] - Removing session 130a74a310874aa268e8da5d2dd6cbf7 (org.openqa.selenium.chrome.ChromeDriverService)
-1566819463761	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IONUT~1.CHI\\AppData\\Local\\Temp\\rust_mozprofile.BDjAFgcCsyxn"
-14:37:43.770 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "chrome",
-  "javascriptEnabled": true
-}
-14:37:43.770 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
-Starting ChromeDriver 75.0.3770.90 (a6dcaf7e3ec6f70a194cc25e8149475c6590e025-refs/branch-heads/3770@{#1003}) on port 4725
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-1566819464449	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1566819464450	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1566819464450	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1566819464450	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-[1566819465.062][WARNING]: This version of ChromeDriver has not been tested with Chrome version 76.
-[1566819467.102][WARNING]: Timed out connecting to Chrome, retrying...
-1566819467210	Marionette	INFO	Listening on port 64576
-14:37:47.523 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-14:37:47.539 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0892570e-5803-41ad-b1ef-04c457a8ef11 (org.openqa.selenium.firefox.GeckoDriverService)
-14:37:49.148 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-14:37:49.164 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1b0b05e74df764373a3e63ee92ce8987 (org.openqa.selenium.chrome.ChromeDriverService)
-1566819480509	Marionette	INFO	Stopped listening on port 64576
-[Parent 8896, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 14140, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-[GPU 9800, Chrom
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
-14:38:01.554 INFO [ActiveSessions$1.onStop] - Removing session 0892570e-5803-41ad-b1ef-04c457a8ef11 (org.openqa.selenium.firefox.GeckoDriverService)
-14:38:01.806 INFO [ActiveSessions$1.onStop] - Removing session 1b0b05e74df764373a3e63ee92ce8987 (org.openqa.selenium.chrome.ChromeDriverService)

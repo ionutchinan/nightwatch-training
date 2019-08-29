@@ -33,7 +33,7 @@ module.exports = {
   },
   test_settings: {
     chrome: {
-      launch_url: 'http://192.168.88.76.xip.io:8091/#/login',
+      launch_url: 'http://192.168.88.76.xip.io:8091/',
       screenshots: {
         enabled: true,
         on_failure: true,
@@ -46,7 +46,7 @@ module.exports = {
       }
     },
     firefox: {
-      launch_url: 'http://192.168.88.76.xip.io:8091/#/login',
+      launch_url: 'http://192.168.88.76.xip.io:8091/',
       screenshots: {
         enabled: true,
         on_failure: true,
