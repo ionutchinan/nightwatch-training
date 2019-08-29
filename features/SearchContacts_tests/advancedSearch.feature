@@ -3,7 +3,7 @@ Feature: Search for contacts using advanced search filters
 Background: 
 Given the user is logged in
 And the page language is English
-
+@tag
 Scenario: Happy path: Search for all the employees of a subsidiary
 Given the user is on the contacts page
 When the user clicks the advanced search button

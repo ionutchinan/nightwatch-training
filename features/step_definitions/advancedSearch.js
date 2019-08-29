@@ -38,7 +38,7 @@ When(/^the user selects "(.*?)"$/, (subsidiary) => {
   })
 })
 Then(/^the only results shown are the employees belonging to "(.*?)"$/, (subsidiary) => {
-// haven't figured out how to make .(back) work in a loop
+  // haven't figured out how to make .(back) work in a loop
 
   /* let counter = 1 // the counter is used to count the number of pages of results
   for (let i = 1; i <= counter + 1; i++) {
